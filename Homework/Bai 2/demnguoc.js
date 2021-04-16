@@ -2,10 +2,8 @@
 
 let countAction
 let timeStop
-
-// Start
+    // Start
 let startCount = document.getElementById("start")
-
 
 startCount.onclick = function() {
 
@@ -14,24 +12,12 @@ startCount.onclick = function() {
     countAction = setInterval(() => {
 
 
-
-
-        //     let resultCount = document.getElementById("result")
-        //     resultCount.innerText = userInput--
-        //         setTimeout(() => {
-        //             clearInterval(countAction)
-        //             resultCount.innerText = "Time's up!"
-        //             startCount.disabled = false
-        //             stopCount.disabled = false
-        //         }, 6000);
-
-
-
         let resultCount = document.getElementById("result")
         resultCount.innerText = userInput--
-            let x = Number(resultCount.innerText)
+            timeStop = Number(resultCount.innerText)
 
-        if (x < 0) {
+        if (timeStop < 0) {
+
             clearInterval(countAction)
             resultCount.innerText = "Time's up!"
             startCount.disabled = false
@@ -52,10 +38,10 @@ stopCount.onclick = function() {
 
     clearInterval(countAction)
     let resultCount = document.getElementById("result")
-
     resultCount.innerText = "Stopped!"
     stopCount.disabled = true
     startCount.disabled = false
+
 }
 
 // Lỗi: Nếu không disable khi ấn lần đầu thì khi ấn start nhiều lần ko stop được nữa.
