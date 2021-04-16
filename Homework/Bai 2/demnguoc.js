@@ -1,6 +1,7 @@
 // Đếm ngược
 
 let countAction
+let timeStop
 
 // Start
 let startCount = document.getElementById("start")
@@ -12,26 +13,30 @@ startCount.onclick = function() {
 
     countAction = setInterval(() => {
 
-        if (userInput === "") {
 
-            userInput = 6
-            let resultCount = document.getElementById("result")
-            resultCount.innerText = userInput--
 
-                setTimeout(() => {
-                    clearInterval(countAction)
-                    resultCount.innerText = "Time's up!"
-                    startCount.disabled = false
-                    stopCount.disabled = false
 
-                }, 6000);
+        //     let resultCount = document.getElementById("result")
+        //     resultCount.innerText = userInput--
+        //         setTimeout(() => {
+        //             clearInterval(countAction)
+        //             resultCount.innerText = "Time's up!"
+        //             startCount.disabled = false
+        //             stopCount.disabled = false
+        //         }, 6000);
 
-            // Khi đang chạy mà ấn stop ko dừng mà tiếp tục đếm ngược đủ thời gian
 
-        }
 
         let resultCount = document.getElementById("result")
         resultCount.innerText = userInput--
+            let x = Number(resultCount.innerText)
+
+        if (x < 0) {
+            clearInterval(countAction)
+            resultCount.innerText = "Time's up!"
+            startCount.disabled = false
+            stopCount.disabled = false
+        }
 
     }, 1000)
 
@@ -63,5 +68,6 @@ resetCount.onclick = function() {
     stopCount.disabled = false
     startCount.disabled = false
     document.getElementById("countDownInput").value = " "
-    document.getElementById("result").innerText = "Start"
+    document.getElementById("result").innerText = "--"
+    document.getElementById("countDownInput").value = "5"
 }
