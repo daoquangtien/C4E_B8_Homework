@@ -1,0 +1,46 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.counter {
+    display: flex;
+    height: 100vh;
+}
+
+.counter--program {
+    margin: auto;
+    width: 300px;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+/* .count--program__content {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(207, 194, 194)
+} */
+
+#number {
+    line-height: 90px;
+    width: 100px;
+    background-color: white;
+}
+
+.count--program__addition,
+.count--program__subtraction {
+    cursor: pointer;
+    height: 90px;
+    width: 100px;
+}
+
+.count--program__addition:hover,
+.count--program__subtraction:hover {
+    font-size: 50px;
+}

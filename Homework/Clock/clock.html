@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+</head>
+
+<body>
+    <div class="clock">
+
+        <div class="clock--background">
+
+            <div class="clock--day">
+                <div class="bigContent clock--day__value" id="day"></div>
+                <div class="smallContent clock--day__defaut">DAY</div>
+            </div>
+            <p>:</p>
+            <div class="clock--hour">
+                <div class="bigContent clock--hour__value"></div>
+                <div class="smallContent clock--hour__defaut">HOUR</div>
+
+            </div>
+            <p id="clock--signal">:</p>
+            <div class="clock--minute">
+                <div class="bigContent clock--minute__value"></div>
+                <div class="smallContent clock--minute__defaut">MINUTE</div>
+            </div>
+            <p>:</p>
+            <div class="clock--second">
+                <div class="bigContent clock--second__value" id="second"></div>
+                <div class="smallContent clock--second__defaut">SECOND</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="clock.js"></script>
+
+</body>
+
+</html>

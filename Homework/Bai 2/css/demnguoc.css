@@ -1,0 +1,41 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.coutDownProgram {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
+
+.countDown {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 80px;
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#start {
+    color: darkgreen;
+}
+
+#stop {
+    color: darkred;
+}
+
+#result {
+    width: 500px;
+    text-align: end;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
